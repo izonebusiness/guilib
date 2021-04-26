@@ -191,12 +191,12 @@
             <div class="option">
                 <div class="option-title">
                    <h4 align="justify">Our goal is to enrich the curriculum-based learning experience of students and help them do better in school using a wide variety of materials in a judgement free environment.</h4>
-                  
-                  <ul>
-                      <li>Understand and retain concepts.</li>
-                      <li>Enjoy the learning experience and want to repeat it.</li>
-                      <li>Achieve success in school.</li>
-                    </ul>
+                  <br>
+                  <ul class="a">
+                      <li class="b">Understand and retain concepts.</li>
+                      <li class="b">Enjoy the learning experience and want to repeat it.</li>
+                      <li class="b">Achieve success in school.</li>
+                  </ul>
                     
                 </div>
                   <!--  <span>Admission test Mistakes</span>-->
@@ -248,23 +248,23 @@
 </div><!-- /.container -->
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $("#order1").shieldQRcode({
-            mode: "byte",
-            size: 150,
-            value: "https://somesite/order?plan=1"
-        });
-        $("#order2").shieldQRcode({
-            mode: "byte",
-            size: 150,
-            value: "https://somesite/order?plan=2"
-        });
-        $("#order3").shieldQRcode({
-            mode: "byte",
-            size: 150,
-            value: "https://somesite/order?plan=3"
-        });
-    });
+   //$(document).ready(function () {
+   //    $("#order1").shieldQRcode({
+   //        mode: "byte",
+   //        size: 150,
+   //        value: "https://somesite/order?plan=1"
+   //    });
+   //    $("#order2").shieldQRcode({
+   //        mode: "byte",
+   //        size: 150,
+   //        value: "https://somesite/order?plan=2"
+   //    });
+   //    $("#order3").shieldQRcode({
+   //        mode: "byte",
+   //        size: 150,
+   //        value: "https://somesite/order?plan=3"
+   //    });
+   //});
 </script>
 
 <!-- you need to include the shieldui css and js assets in order for the grids to work -->
@@ -390,6 +390,16 @@
             -moz-transition: all 0.7s ease-in-out;
             -o-transition: all 0.7s ease-in-out;
             transition: all 0.7s ease-in-out;
+        }
+     
+        ul.a {
+          list-style-type:square;
+          padding-left: 20px;
+          color: blue;
+        }
+        li.b {
+          /*padding-right: 450px;*/
+          text-align: left;
         }
 </style>
    <!--<div class="container" >

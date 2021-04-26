@@ -185,10 +185,12 @@
                     <p class="comment-form-comment">
                       <label for="comment">What do you want to know from us?</label>
                       <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
-                    </p>                
+                    </p>       
+                    <form method="post">         
                     <p class="form-submit">
-                      <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
-                    </p>        
+                      <input type="button" id="sendmail" value="Send Message" class="mu-post-btn" name="submit">
+                    </p>   
+                  </form>     
                   </form>
                 </div>
               </div>
@@ -298,6 +300,8 @@
   </script>
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="assets/js/sendmail.js"></script>
 
   </body>
 </html>
