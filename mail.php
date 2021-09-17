@@ -5,7 +5,7 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 $number = $_POST['mobile'];
 
-$to = "sarveshizone@gmail.com";
+$to = "izonemvp@gmail.com";
 
 $subject = "Mail From codeconia";
 $txt ="Name = ". $name . "\r\n Email = " . $email . "\r\n Message =" . $message ."\r\n Mobile number =". $number;
