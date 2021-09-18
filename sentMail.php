@@ -1,7 +1,7 @@
 <?php
  
 if(isset($_POST['submit'])){
-    $mailto = "hmawebdesign@hotmail.com"; // My email address
+    $mailto = "info@guilib.in"; // My email address
      //custmer data
     $name = $_POST['name'];  // Getting Customer Name
     $from = $_POST['email']; // Getting customer Email address
