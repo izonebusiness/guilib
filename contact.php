@@ -51,7 +51,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>GUILIB | THE GUIDED LIBRARY</title>
+    <title>GUILIB | Contact Us</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/guiliblogo.jpeg" type="image/x-icon">
@@ -253,7 +253,7 @@
  <!-- End contact  -->
  
 <div class="container" style="width:500px;">  
-                <h3 align="">Append Data to JSON File</h3><br />                 
+                <h3 align="">Contact Guilib</h3><br />                 
                 <form method="post">  
                      <?php   
                      if(isset($error))  
@@ -269,7 +269,7 @@
                      <label>Subject</label>  
                      <input type="text" name="subject" class="form-control" /><br />  
                     <input type="comment" name="comment" class="form-control" /><br /> 
-                     <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
+                     <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
                      <?php  
                      if(isset($message))  
                      {  
