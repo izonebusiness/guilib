@@ -2,7 +2,7 @@
   
 <head>
     <meta charset="UTF-8">
-    <title>GFG User Details</title>
+    <title>People Contacted to Guilib</title>
   
     <!-- INCLUDING JQUERY-->
     <script src=
@@ -47,15 +47,16 @@
   
 <body>
     <section>
-        <h1>GeeksForGeeks</h1>
+        <h1>Guilib Leads</h1>
   
         <!-- TABLE CONSTRUCTION-->
         <table id='table'>
             <!-- HEADING FORMATION -->
             <tr>
                 <th>Name</th>
-                <th>Gender</th>
-                <th>Designation</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
             </tr>
   
             <script>
@@ -64,28 +65,31 @@
                     // FETCHING DATA FROM JSON FILE
                     $.getJSON("employee_data.json", 
                             function (data) {
-                        var student = '';
+                        var customer = '';
   
                         // ITERATING THROUGH OBJECTS
                         $.each(data, function (key, value) {
   
                             //CONSTRUCTION OF ROWS HAVING
                             // DATA FROM JSON OBJECT
-                            student += '<tr>';
-                            student += '<td>' + 
+                            customer += '<tr>';
+                            customer += '<td>' + 
                                 value.name + '</td>';
   
-                            student += '<td>' + 
-                                value.gender + '</td>';
+                            customer += '<td>' + 
+                                value.email + '</td>';
   
-                            student += '<td>' + 
-                                value.designation + '</td>';
+                            customer += '<td>' + 
+                                value.subject + '</td>';
+                            
+                            customer += '<td>' + 
+                                value.comment + '</td>';
   
-                            student += '</tr>';
+                            customer += '</tr>';
                         });
                           
                         //INSERTING ROWS INTO TABLE 
-                        $('#table').append(student);
+                        $('#table').append(customer);
                     });
                 });
             </script>
