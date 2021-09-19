@@ -7,14 +7,18 @@
       {  
            $error = "<label class='text-danger'>Enter Name</label>";  
       }  
-      else if(empty($_POST["gender"]))  
+      else if(empty($_POST["email"]))  
       {  
-           $error = "<label class='text-danger'>Enter Gender</label>";  
+           $error = "<label class='text-danger'>Enter Email</label>";  
       }  
-      else if(empty($_POST["designation"]))  
+      else if(empty($_POST["subject"]))  
       {  
-           $error = "<label class='text-danger'>Enter Designation</label>";  
+           $error = "<label class='text-danger'>Enter Subject</label>";  
       }  
+     else if(empty($_POST["message"]))  
+      {  
+           $error = "<label class='text-danger'>Enter Message</label>";  
+      } 
       else  
       {  
            if(file_exists('employee_data.json'))  
@@ -23,19 +27,20 @@
                 $array_data = json_decode($current_data, true);  
                 $extra = array(  
                      'name'               =>     $_POST['name'],  
-                     'gender'          =>     $_POST["gender"],  
-                     'designation'     =>     $_POST["designation"]  
+                     'email'          =>     $_POST["email"],  
+                     'subject'     =>     $_POST["subject"], 
+                    'message'  =>   $_POST["message"]
                 );  
                 $array_data[] = $extra;  
                 $final_data = json_encode($array_data);  
                 if(file_put_contents('employee_data.json', $final_data))  
                 {  
-                     $message = "<label class='text-success'>File Appended Success fully</p>";  
+                     $message = "<label class='text-success'>Thank you for contacting us, we will get back to you as soon as possible</p>";  
                 }  
            }  
            else  
            {  
-                $error = 'JSON File not exits';  
+                $error = 'Some Error Occured';  
            }  
       }  
  }  
@@ -43,10 +48,35 @@
  <!DOCTYPE html>  
  <html>  
       <head>  
-           <title>Webslesson Tutorial | Append Data to JSON File using PHP</title>  
+             
+          <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>GUILIB | Contact Us</title>
+          <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/guiliblogo.jpeg" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">    
+
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+         
       </head>  
       <body>  
            <br />  
@@ -78,3 +108,33 @@
            <br />  
       </body>  
  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
