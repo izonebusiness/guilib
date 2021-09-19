@@ -200,18 +200,17 @@
  <!-- End breadcrumb -->
 
  <!-- Start contact  -->
- <section id="mu-contact">
+ <!--<section id="mu-contact">
    <div class="container">
      <div class="row">
        <div class="col-md-12">
          <div class="mu-contact-area">
-          <!-- start title -->
+          
           <div class="mu-title">
             <h2>Contact us for any Queries</h2>
             <p>We are happy to help in knowing details about courses & other details.</p>
           </div>
-          <!-- end title -->
-          <!-- start contact content -->
+         
           <div class="mu-contact-content">           
             <div class="row">
               <div class="col-md-6">
@@ -234,12 +233,6 @@
                       <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
                     </p>       
                     <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
-                     <?php  
-                     if(isset($message))  
-                     {  
-                          echo $message;  
-                     }  
-                     ?>    
                   </form>
                 </div>
               </div>
@@ -251,15 +244,40 @@
               </div>
             </div>
           </div>
-          <!-- end contact content -->
+          
          </div>
        </div>
      </div>
    </div>
- </section>
+ </section> -->
  <!-- End contact  -->
  
-
+<div class="container" style="width:500px;">  
+                <h3 align="">Append Data to JSON File</h3><br />                 
+                <form method="post">  
+                     <?php   
+                     if(isset($error))  
+                     {  
+                          echo $error;  
+                     }  
+                     ?>  
+                     <br />  
+                     <label>Name</label>  
+                     <input type="text" name="name" class="form-control" /><br />  
+                     <label>Email</label>  
+                     <input type="email" name="email" class="form-control" /><br />  
+                     <label>Subject</label>  
+                     <input type="text" name="subject" class="form-control" /><br />  
+                    <input type="comment" name="comment" class="form-control" /><br /> 
+                     <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
+                     <?php  
+                     if(isset($message))  
+                     {  
+                          echo $message;  
+                     }  
+                     ?>  
+                </form>  
+           </div>
   <!-- Start footer -->
   <!-- Start footer -->
   <footer id="mu-footer">
