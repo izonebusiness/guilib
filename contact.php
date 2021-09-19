@@ -266,8 +266,9 @@
                      <input type="text" name="name" class="form-control" /><br />  
                      <label>Email</label>  
                      <input type="email" name="email" class="form-control" /><br />  
-                     <label>Subject</label>  
+                     <label>Are you a Parent looking for Tuition / Teacher looking for an Employment Opportunity</label>  
                      <input type="text" name="subject" class="form-control" /><br />  
+                    <label>Please tell us more what do you want to know from us</label>
                     <input type="comment" name="comment" class="form-control" /><br /> 
                      <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
                      <?php  
