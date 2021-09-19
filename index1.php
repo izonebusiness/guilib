@@ -15,7 +15,7 @@
       {  
            $error = "<label class='text-danger'>Enter Subject</label>";  
       }  
-     else if(empty($_POST["message"]))  
+     else if(empty($_POST["comment"]))  
       {  
            $error = "<label class='text-danger'>Enter Message</label>";  
       } 
@@ -29,7 +29,7 @@
                      'name'               =>     $_POST['name'],  
                      'email'          =>     $_POST["email"],  
                      'subject'     =>     $_POST["subject"], 
-                    'message'  =>   $_POST["message"]
+                    'comment'  =>   $_POST["comment"]
                 );  
                 $array_data[] = $extra;  
                 $final_data = json_encode($array_data);  
@@ -93,9 +93,9 @@
                      <label>Name</label>  
                      <input type="text" name="name" class="form-control" /><br />  
                      <label>Email</label>  
-                     <input type="email" name="gender" class="form-control" /><br />  
+                     <input type="email" name="email" class="form-control" /><br />  
                      <label>Subject</label>  
-                     <input type="text" name="designation" class="form-control" /><br />  
+                     <input type="text" name="subject" class="form-control" /><br />  
                     <input type="comment" name="comment" class="form-control" /><br /> 
                      <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
                      <?php  
