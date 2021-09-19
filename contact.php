@@ -233,7 +233,7 @@
                       <label for="comment">What do you want to know from us?</label>
                       <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
                     </p>       
-                    <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
+                    <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
                      <?php  
                      if(isset($message))  
                      {  
