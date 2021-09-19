@@ -92,10 +92,11 @@
                      <br />  
                      <label>Name</label>  
                      <input type="text" name="name" class="form-control" /><br />  
-                     <label>Gender</label>  
-                     <input type="text" name="gender" class="form-control" /><br />  
-                     <label>Designation</label>  
+                     <label>Email</label>  
+                     <input type="email" name="gender" class="form-control" /><br />  
+                     <label>Subject</label>  
                      <input type="text" name="designation" class="form-control" /><br />  
+                    <input type="comment" name="comment" class="form-control" /><br /> 
                      <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
                      <?php  
                      if(isset($message))  
