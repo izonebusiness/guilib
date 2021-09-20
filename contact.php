@@ -254,6 +254,9 @@
  <section id="mu-contact">
 <div class="container">
      <input type="button" onclick="https://wa.link/1okoqk" value="Send Message to Whatsapp"/>
+    <a href="https://wa.link/1okoqk">
+    <button>Send Message to Whatsapp</button>
+  </a> 
                 <form method="post">  
                      <?php   
                      if(isset($error))  
@@ -322,7 +325,7 @@
                 <h4>CONTACT DETAILS</h4>
                 <p>Phone: +91 8870410450,+91 8309648153</p>
                  <p>Website: www.guilib.in</p>
-                  <p>Email: guilibegs@gmail.com</p>
+                  <p>Email: info@guilib.in</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
