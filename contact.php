@@ -252,7 +252,7 @@
  </section> -->
  <!-- End contact  -->
  <section id="mu-contact">
-<div class="container" style="width:500px;">                
+<div class="container">                
                 <form method="post">  
                      <?php   
                      if(isset($error))  
