@@ -116,11 +116,11 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+                      <li><a href="https://www.facebook.com/guilib.in"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/GuilibTuition"><span class="fa fa-twitter"></span></a></li>
+                      <li><a href="https://www.instagram.com/guilibtuitioncentre/"><span class="fa fa-instagram"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                      <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCI66Gt_ATpGEg3u94XbXakQ"><span class="fa fa-youtube"></span></a></li>
                     </ul>
                   </nav>
                 </div>
@@ -252,7 +252,8 @@
  </section> -->
  <!-- End contact  -->
  <section id="mu-contact">
-<div class="container">                
+<div class="container">
+     <input type="button" onclick="https://wa.link/1okoqk" value="Send Message to Whatsapp"/>
                 <form method="post">  
                      <?php   
                      if(isset($error))  
@@ -308,11 +309,11 @@
               <div class="mu-footer-widget">
                 <h4>Social Media</h4>
                 <ul class="mu-top-social-nav">
-                      <li><a href="#"><span>Facebook</span></a></li>
-                      <li><a href="#"><span></span>Twitter</a></li>
-                      <li><a href="#"><span></span>Pinterest</a></li>
+                      <li><a href="https://www.facebook.com/guilib.in"><span class="fa fa-facebook"><span>Facebook</span></a></li>
+                      <li><a href="https://twitter.com/GuilibTuition"><span class="fa fa-twitter"><span></span>Twitter</a></li>
+                      <li><a href="https://www.instagram.com/guilibtuitioncentre/"><span class="fa fa-instagram"><span></span>Instagram</a></li>
                       <li><a href="#"><span>Linkedin</span></a></li>
-                      <li><a href="#"><span>Youtube</span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCI66Gt_ATpGEg3u94XbXakQ"><span>Youtube</span></a></li>
                     </ul>
               </div>
             </div>
