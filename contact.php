@@ -252,8 +252,7 @@
  </section> -->
  <!-- End contact  -->
  
-<div class="container" style="width:500px;">  
-                <h3 align="">Contact Guilib</h3><br />                 
+<div class="container" style="width:500px;">                
                 <form method="post">  
                      <?php   
                      if(isset($error))  
@@ -262,13 +261,13 @@
                      }  
                      ?>  
                      <br />  
-                     <label>Name</label>  
+                     <label align="center">Name</label>  
                      <input type="text" name="name" class="form-control" /><br />  
-                     <label>Email</label>  
+                     <label align="center">Email</label>  
                      <input type="email" name="email" class="form-control" /><br />  
-                     <label>Are you a Parent looking for Tuition / Teacher looking for an Employment Opportunity</label>  
+                     <label align="center">Are you a Parent looking for Tuition / Teacher looking for an Employment Opportunity</label>  
                      <input type="text" name="subject" class="form-control" /><br />  
-                    <label>Please tell us more what do you want to know from us</label>
+                    <label align="center">Please tell us more what do you want to know from us</label>
                     <input type="comment" name="comment" class="form-control" /><br /> 
                      <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
                      <?php  
