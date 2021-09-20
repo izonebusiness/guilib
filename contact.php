@@ -253,7 +253,7 @@
  <!-- End contact  -->
  <section id="mu-contact">
 <div class="container">
-     <input type="button" onclick="https://wa.link/1okoqk" value="Send Message to Whatsapp"/>
+     
     <a href="https://wa.link/1okoqk">
     <button>Send Message to Whatsapp</button>
   </a> 
