@@ -251,7 +251,7 @@
    </div>
  </section> -->
  <!-- End contact  -->
- <section id="mu-page-breadcrumb">
+ <section id="mu-contact">
 <div class="container" style="width:500px;">                
                 <form method="post">  
                      <?php   
@@ -279,7 +279,7 @@
                 </form>  
            </div>
      </section>
-    <section id="mu-page-breadcrumb">
+    <section id="mu-contact">
     <div class="container" style="width:100%;" margin-top:"20px">
         <iframe src="https://www.google.com/maps/embed/v1/place?q=sujathanagar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
