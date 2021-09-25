@@ -60,7 +60,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>GUILIB | Contact Us</title>
+    <title>GUILIB | THE GUIDED LIBRARY</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/guiliblogo.jpeg" type="image/x-icon">
@@ -125,11 +125,11 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="https://www.facebook.com/guilib.in"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="https://twitter.com/GuilibTuition"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="https://www.instagram.com/guilibtuitioncentre/"><span class="fa fa-instagram"></span></a></li>
+                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                      <li><a href="https://www.youtube.com/channel/UCI66Gt_ATpGEg3u94XbXakQ"><span class="fa fa-youtube"></span></a></li>
+                      <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                     </ul>
                   </nav>
                 </div>
@@ -166,7 +166,7 @@
             <li><a href="course-detail.html">Course Details</a></li>
             <li><a href="study-plan.html">Study Plan</a></li>
             <li><a href="gallery.html">Guilib Gallery</a></li>
-            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
           </ul>                     
           </ul>                   
         </div><!--/.nav-collapse -->        
@@ -209,17 +209,18 @@
  <!-- End breadcrumb -->
 
  <!-- Start contact  -->
- <!--<section id="mu-contact">
+ <section id="mu-contact">
    <div class="container">
      <div class="row">
        <div class="col-md-12">
          <div class="mu-contact-area">
-          
+          <!-- start title -->
           <div class="mu-title">
             <h2>Contact us for any Queries</h2>
             <p>We are happy to help in knowing details about courses & other details.</p>
           </div>
-         
+          <!-- end title -->
+          <!-- start contact content -->
           <div class="mu-contact-content">           
             <div class="row">
               <div class="col-md-6">
@@ -241,7 +242,13 @@
                       <label for="comment">What do you want to know from us?</label>
                       <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
                     </p>       
-                    <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
+                    <input type="submit" name="submit" value="Append" class="btn btn-info" /><br />                      
+                     <?php  
+                     if(isset($message))  
+                     {  
+                          echo $message;  
+                     }  
+                     ?>    
                   </form>
                 </div>
               </div>
@@ -253,50 +260,15 @@
               </div>
             </div>
           </div>
-          
+          <!-- end contact content -->
          </div>
        </div>
      </div>
    </div>
- </section> -->
+ </section>
  <!-- End contact  -->
- <section id="mu-contact">
-<div class="container">
-     
-    <a href="https://wa.link/1okoqk">
-    <button>Send Message to Whatsapp</button>
-  </a> 
-                <form method="post">  
-                     <?php   
-                     if(isset($error))  
-                     {  
-                          echo $error;  
-                     }  
-                     ?>  
-                     <br />  
-                     <label align="center">Name</label>  
-                     <input type="text" name="name" class="form-control" /><br />  
-                     <label align="center">Email</label>  
-                     <input type="email" name="email" class="form-control" /><br />  
-                     <label align="center">Are you a Parent looking for Tuition / Teacher looking for an Employment Opportunity</label>  
-                     <input type="text" name="subject" class="form-control" /><br />  
-                    <label align="center">Please tell us more what do you want to know from us</label>
-                    <input type="comment" name="comment" class="form-control" /><br /> 
-                     <input type="submit" name="submit" value="Send Details" class="btn btn-info" /><br />                      
-                     <?php  
-                     if(isset($message))  
-                     {  
-                          echo $message;  
-                     }  
-                     ?>  
-                </form>  
-           </div>
-     </section>
-    <section id="mu-contact">
-    <div class="container" style="width:100%;" margin-top:"20px">
-        <iframe src="https://www.google.com/maps/embed/v1/place?q=sujathanagar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    </section>
+ 
+
   <!-- Start footer -->
   <!-- Start footer -->
   <footer id="mu-footer">
@@ -321,11 +293,11 @@
               <div class="mu-footer-widget">
                 <h4>Social Media</h4>
                 <ul class="mu-top-social-nav">
-                      <li><a href="https://www.facebook.com/guilib.in"><span class="fa fa-facebook"><span>Facebook</span></a></li>
-                      <li><a href="https://twitter.com/GuilibTuition"><span class="fa fa-twitter"><span></span>Twitter</a></li>
-                      <li><a href="https://www.instagram.com/guilibtuitioncentre/"><span class="fa fa-instagram"><span></span>Instagram</a></li>
+                      <li><a href="#"><span>Facebook</span></a></li>
+                      <li><a href="#"><span></span>Twitter</a></li>
+                      <li><a href="#"><span></span>Pinterest</a></li>
                       <li><a href="#"><span>Linkedin</span></a></li>
-                      <li><a href="https://www.youtube.com/channel/UCI66Gt_ATpGEg3u94XbXakQ"><span>Youtube</span></a></li>
+                      <li><a href="#"><span>Youtube</span></a></li>
                     </ul>
               </div>
             </div>
@@ -334,7 +306,7 @@
                 <h4>CONTACT DETAILS</h4>
                 <p>Phone: +91 8870410450,+91 8309648153</p>
                  <p>Website: www.guilib.in</p>
-                  <p>Email: info@guilib.in</p>
+                  <p>Email: guilibegs@gmail.com</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
