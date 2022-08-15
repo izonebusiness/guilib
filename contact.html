@@ -290,7 +290,6 @@
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		    .then(response => alert("You have successfully submitted."))
-		    window.location.href = "https://www.guilib.in/";
                 .catch(error => console.error('Error!', error.message))
             })
   </script>
